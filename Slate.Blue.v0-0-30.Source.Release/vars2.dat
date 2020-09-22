@@ -1,0 +1,80 @@
+install.exe
+name
+caption
+path_to_icon.ico
+[off] | [top_color bottom_color [textcolor | notext]]
+normal|silent|silentlog
+on|off
+default_install_directory
+root_key subkey key_name
+text
+license_data_file.txt
+[text_goes_here]
+(/NOCUSTOM | install_type_name)
+bitmap.bmp
+bitmap.bmp
+show|hide
+[text]
+(/windows | (foreground background))
+true|false
+hide|show|nevershow
+text
+exename.exe
+path_to_icon.ico
+on|off|try|ifnewer
+auto|force|off
+on|off
+on|off
+[section_name]
+section_index_list
+none
+none
+function_name
+none
+output_path
+([/r] file|wildcard [file|wildcard [...]]) | (/oname=file.dat infile.dat)
+full_path_of_command_to_execute
+full_path_of_command_to_execute
+action full_path_of_command_to_execute [parameters [SW_SHOWNORMAL|SW_SHOWMAXIMIZED|SW_SHOWMINIMIZED]]
+[/REBOOTOK] source_file dest_file
+[/REBOOTOK] path_of_file_or_wildcard
+[/r] full_path_to_directory
+root_key subkey key_name value
+root_key subkey key_name value
+root_key subkey key_name valuedata
+ini_filename section_name entry_name value
+$(0-9|INSTDIR|OUTDIR) root_key sub_key name
+$(0-9|INSTDIR|OUTDIR) ini_filename section_name entry_name
+root_key subkey key_name
+[/ifempty] root_key subkey
+ini_filename section_name
+ini_filename section_name str_name
+path_to_create
+path_of_file_or_wildcard_on_destination_system destination_path size_of_files_in_kb
+link.lnk target.file [parameters [icon.file [icon_index_number [start_options [keyboard_shortcut]]]]]
+full_path_to_ActiveX_control_DLL_file [entrypoint_name]
+full_path_to_ActiveX_control_DLL_file
+full_path_to_netscape_plug-in_DLL_on_the_source_system
+netscape_plug-in_name_only
+$(0-9|INSTDIR|OUTDIR) dll_name
+none
+label_to_jump_to
+function_name
+jumpto_iferror [jumpto_ifnoerror]
+none
+close|closeinstant|prompt|goto:label windowclass [messageboxtext]
+close|closeinstant|prompt|goto:label windowtitle [messageboxtext]
+file_to_check_for jump_if_present [jump_otherwise]
+mb_option_list messagebox_text [return_check [jumpto]]
+[/STOREFROM] dll1 dll2 jumpto_dll1newer jumpto_dll2newer
+[/STOREFROM] file1 file2 jumpto_file1_newer jumpto_file2_newer
+str1 str2 jump_if_equal [jump_if_not_equal]
+user_message
+show|hide
+true|false
+user_message
+sleeptime_in_ms
+none
+none
+$(0-9|INSTDIR|OUTDIR) str [maxlen]
+$(0-9|INSTDIR|OUTDIR) path

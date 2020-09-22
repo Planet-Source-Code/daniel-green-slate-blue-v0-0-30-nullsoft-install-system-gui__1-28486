@@ -1,0 +1,26 @@
+"; This script created by Slate Blue, a product of morphedmedia.com.
+
+; Title of this installation
+Name ""Slate Blue Default""
+;Output Filename
+OutFile ""SlateBlueDef.exe""
+; License Page Introduction
+LicenseText ""This installer will install the Nullsoft Tiny Visualization 2000 Plug-in for Winamp. Please read the license below.""
+; License Data
+LicenseData license.txt
+; The default installation directory
+InstallDir $PROGRAMFILES\Winamp
+; Detect winamp directory if available
+InstallDirRegKey HKLM \ ""Software\Microsoft\Windows\CurrentVersion\Uninstall\Winamp"" \ ""UninstallString""
+; The text to prompt the user to enter a directory
+DirText ""Please select your Winamp path below (you will be able to proceed when Winamp is detected):""
+DirShow hide
+; The stuff to install
+Section ""ThisNameIsIgnoredSoWhyBother?""
+; Set output path = already-chosen installation dir
+SetOutPath $INSTDIR
+; Put the file(s) there
+; File Number: 1
+File ""C:\Program Files\Microsoft Visual Studio\VB98\nsis gui\slateblue.exe""
+SectionEnd
+; eof"

@@ -1,0 +1,144 @@
+Slate Blue 0.0.28:
+* all functions/instructions/etc accounted for(usage and description) in editor form
+   * now i just have to code for all of these
+* layout is much larger, fullscreen
+* added debug window, used to see if your script will run before you compile it
+* license.txt now included, outlining the usage of the slate blue source
+* detacheable script window created
+* slate blue actually useful now; i compiled the source into its first nsis installer today (10/7/01)
+
+Slate Blue 0.0.27:
+* new insertion options
+* added 14 new info labels to the editor
+* small bug fixes
+* sorted treeview into categories & subcategories
+   * dammit this is taking forever!
+   * DONE FUCK YEAH!
+
+Slate Blue 0.0.26:
+* added Code Layout tab, containing the script in an easy-
+   to-view format, utilizing drag and drop code rearrangement
+   * double click for script editor
+* new parsing function, more reliable (old one left parts of script out!)
+* enabled the Mode menu, moved it to Compile>>Mode, allowing you
+   to choose either code layout generation or gui generation
+   (later disabled, since it is no longer necessary)
+* interface is more spaced out, less crammed together
+* added list of ALL functions, calls, etc
+* cleaned up the GUI, less places to go on the main screen
+* editing the script now uses the editor instead of textboxes,
+   just double click any item in the code layout list to edit it
+* added morphedmedia.com & winamp logos to the main screen, also
+   paypal and winamp logos to the about screen
+* condensed about, greetings, and contributors boxes into one
+* quite a few bugfixes, along with code cleanup (neatness, optimizations,
+   etc)
+* removed script editor form, incorporated it into code layout
+* removed Show Script Editor menu ^see above^
+* mmm, cross-form strings, used in setting the code in other forms
+* adding all 113 functions/calls/etc to the editor
+   * the main reason this takes to long is that I have to decide which
+      functions can use the same frame, and which need their own;  this
+      means I could have less than 50 unique frames, while coding all 113
+   * (september 2, 12:25am - 5 functions set up)
+   * (september 2, 2:41pm - 11 functions set up)
+   * (september 2, 3:43pm - 13 functions set up)
+   * (september 3, 12:50am -17 functions set up)
+   * (september 3, 4:01pm - 11 functions set up)
+   * (september 3, 10:41pm - more functions set up, going to bed early for a
+      change ;0)
+   * 32 functions have been removed, as they were things like $a, $b, $c, etc,
+      which appear in other functions, and have no independent value
+* slate blue for nsis now appears in the taskbar on app startup
+* reduced height of editor by about 35%-45%
+* added a function description in the editor for easy reference to the scripting
+   language
+* currently EDITING A SCRIPT is the ONLY function SUPPORTED; this means
+   you cannot create a new script, that comes after everything else
+* added New menu, renamed load and save menus
+* added buttons used in creating script
+* added template script containing minimal settings
+* added a treeview that lists all of the functions, allowing the user to create scripts
+* functions in the treeview will be sorted upon release of v0.0.27
+* moved about, what's new, and to do list to a separate form, reducing clutter
+
+Slate Blue 0.0.25 r2:
+* improved script parsing where outfiles are concerned
+* various small code enhancements
+* new colors tab
+* added color preview to all color settings
+* added shortcut creation
+* updated contributors text
+
+Slate Blue 0.0.25:
+* script parsing more stable
+* major bugfixes
+* next release: watch for tons of new options
+
+Slate Blue 0.0.24:
+* larger gui for the gui
+* although sketchy, slate blue can now read the
+   files to be installed from the script into a listbox
+* fixed a bug where program ran infinitely after close
+
+Slate Blue 0.0.22:
+* fixed bug in script parser where the OutDir was
+   read as being 2 chars longer than it really is
+   (ex. "S\NSIScrap\BigTest" instead of
+   "NSIScrap\BigTest".)
+* Added CRCCheck option
+
+Slate Blue 0.0.21:
+* enabled File>Load menu
+* parsing of scripts begun
+* you can now load a script and the settings
+   Slate Blue supports will be read into the
+   program
+* excellent new options
+
+Slate Blue 0.0.20:
+* disabled File>Load menu until it is coded
+
+Slate Blue 0.0.19:
+* fixed bug where saved files start and end with
+   quotes
+* scripts created by Slate Blue now compile
+   successfully
+* fixed the Help menu and its submenus
+* added at least one new option
+* added the Scheduled Work section
+
+Slate Blue 0.0.18:
+* added new compiler options
+* rearranged many options to new locations
+* commented 95% of the code
+* fixed recurse directory bug (on big folders it
+   would hang)
+* edited the Greetings
+* edited the Contributors
+* changed the About section
+* disabled the Mode menu until it has been coded
+* added a What's New page
+* it's 12:58am - timeforbedb4idieofexhaustion. -
+   tomorrow begins new coding.
+
+Slate Blue 0.0.13:
+* 50% done with a simple script generator
+* couple o' bugfixes
+* added many new options to the scripting "engine"
+* you can now add whole directories to your  script
+   via recursiveness
+
+Slate Blue 0.0.10:
+* ability to generate scripts, with full commenting
+* major bugfixes
+* add files to your script
+
+Slate Blue 0.0.5:
+* change from SE to NSIS GUI
+* ability to load/compile scripts
+
+Slate Blue 0.0.1:
+* original version
+* self-extracting executable working
+* first stable version

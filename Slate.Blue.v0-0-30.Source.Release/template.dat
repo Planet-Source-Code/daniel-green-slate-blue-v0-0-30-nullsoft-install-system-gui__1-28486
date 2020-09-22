@@ -1,0 +1,11 @@
+Name "insert your own caption"
+OutFile "insert your own name.exe"
+LicenseText "This installer was created by Slate Blue and the user didn't change this text."
+InstallDir $PROGRAMFILES\Winamp
+DirText "insert a direction the user should follow (insert the winamp path below:)"
+DirShow show
+Section "ThisNameIsIgnoredSoWhyBother?"
+SetOutPath $INSTDIR
+File "insert your file here"
+SectionEnd
+
